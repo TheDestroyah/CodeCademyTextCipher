@@ -1,4 +1,51 @@
+from __future__ import print_function
+ciph_text = (raw_input("Enter Enciphered Text:"))
+ciph_cap_text = (KLMNOPQRSTUVWXYZABCDEFGHIJ)
+unciph_cap_text = (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+
+>> ciptext_list = [ciph_text]
+>> unciptext_list = [duo for duo in ciptext_list if ('A' in duo)]
+>> unciptext_list
+
+'''>> my_dict = {ciph_dict}
+>> content_of_value1 = ""
+>> content_of_value2 = "wxyz"
+>> my_dict.update({"key_name1":content_of_value1})
+>> my_dict.update({"key_name2":content_of_value2})
+>> my_dict
+{'key_name1':"abcd", 'key_name2':"wxyz"}
+>> my_dict.get("key_name2")
+"wxyz"
+'''
+
+# define our method
+def replace_all(text, dic):
+    for i, j in dic.iteritems():
+        text = text.replace(i, j)
+    return text
+ 
+my_text = ciph_text
+ 
+# our dictionary with our key:values.
+# we want to replace 'H' with '|-|'
+# 'e' with '3' and 'o' with '0'
+reps = {'H':'|-|', 'e':'3', 'o':'0'}
+ 
+# bind the returned text of the method
+# to a variable and print it
+txt = replace_all(my_text, reps)
+print txt    # it prints '|-|3ll0 3v3ryb0dy'
+ 
+# of course we can print the result
+# at once with:
+# print replace_all(my_text, reps)
+
+##1(5)2(8)3(6)4(7)5(4)6(3)7(2)8(0)9(1)
+
 ##ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ##KLMNOPQRSTUVWXYZABCDEFGHIJ
 ##abcdefghijklmnopqrstuvwxyz
 ##klmnopqrstuvwxyzabcdefghij
+
+  'K':'A', 'L':'B', 'M':'C' N(D) O(E) P(F) Q(G) R(H) S(I) T(J) U(K) V(L) W(M) X(N) Y(O) Z(P) A(Q) B(R) C(R) D(T) E(U) F(V) G(W) H(X) I(Y) J(Z)
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
