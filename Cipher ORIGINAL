@@ -2,21 +2,27 @@ from __future__ import print_function
 ciph_text = (raw_input("Enter Enciphered Text:"))
 ciph_cap_text = (KLMNOPQRSTUVWXYZABCDEFGHIJ)
 unciph_cap_text = (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+rep_text = ('K':'A', 'L':'B', 'M':'C', 'N':'D, 'O':'E', 'P':'F', 'Q':'G', 'R':'H', 'S':'I', 'T':'J', 'U':'K', 'V':'L', 'W':'M', 'X':'N', 'Y':'O', 'Z':'P', 'A':'Q', 'B':'R', 'C':'R', 'D':'T', 'E':'U', 'F':'V', 'G':'W', 'H':'X', 'I':'Y', 'J':'Z')
+rep_num = ('0':'9', '1':'5', '2':'8', '3':'6', '4':'7', '5':'4', '6':'3', '7':'2', '8':'0', '9':'1')
 
 >> ciptext_list = [ciph_text]
 >> unciptext_list = [duo for duo in ciptext_list if ('A' in duo)]
 >> unciptext_list
 
 '''>> my_dict = {ciph_dict}
->> content_of_value1 = ""
->> content_of_value2 = "wxyz"
->> my_dict.update({"key_name1":content_of_value1})
->> my_dict.update({"key_name2":content_of_value2})
->> my_dict
-{'key_name1':"abcd", 'key_name2':"wxyz"}
->> my_dict.get("key_name2")
-"wxyz"
+>> letter_ciph = rep_text
+>> num_ciph = rep_num
+>> my_dict.update({"Letter_key":letter_ciph})
+>> my_dict.update({"Num_key":num_ciph})
 '''
+s = "mary had a little lamb"
+for c in s[11:18]: print c,  # print each char in slice
+...
+l i t t l e
+if'x'in s: print'got x'   # test for char occurrence
+...
+if'y'in s: print'got y'   # test for char occurrence
+...
 
 # define our method
 def replace_all(text, dic):
@@ -29,7 +35,7 @@ my_text = ciph_text
 # our dictionary with our key:values.
 # we want to replace 'H' with '|-|'
 # 'e' with '3' and 'o' with '0'
-reps = {'H':'|-|', 'e':'3', 'o':'0'}
+reps = {}
  
 # bind the returned text of the method
 # to a variable and print it
@@ -40,12 +46,67 @@ print txt    # it prints '|-|3ll0 3v3ryb0dy'
 # at once with:
 # print replace_all(my_text, reps)
 
-##1(5)2(8)3(6)4(7)5(4)6(3)7(2)8(0)9(1)
+##'0':'9', '1':'5', '2':'8', '3':'6', '4':'7', '5':'4', '6':'3', '7':'2', '8':'0', '9':'1'
 
 ##ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ##KLMNOPQRSTUVWXYZABCDEFGHIJ
 ##abcdefghijklmnopqrstuvwxyz
 ##klmnopqrstuvwxyzabcdefghij
 
-  'K':'A', 'L':'B', 'M':'C' N(D) O(E) P(F) Q(G) R(H) S(I) T(J) U(K) V(L) W(M) X(N) Y(O) Z(P) A(Q) B(R) C(R) D(T) E(U) F(V) G(W) H(X) I(Y) J(Z)
+  'K':'A', 'L':'B', 'M':'C', 'N':'D, 'O':'E', 'P':'F', 'Q':'G', 'R':'H', 'S':'I', 'T':'J', 'U':'K', 'V':'L', 'W':'M', 'X':'N', 'Y':'O', 'Z':'P', 'A':'Q', 'B':'R', 'C':'R', 'D':'T', 'E':'U', 'F':'V', 'G':'W', 'H':'X', 'I':'Y', 'J':'Z'
   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+K = "a"
+L = "b"
+M = "c"
+N = "d"
+O = "e"
+P = "f"
+Q = "g"
+R = "h"
+S = "i"
+T = "j"
+U = "k"
+V = "l"
+W = "m"
+X = "n"
+Y = "o"
+Z = "p"
+A = "q"
+B = "r"
+C = "s"
+D = "t"
+E = "u"
+F = "v"
+G = "w"
+H = "x"
+I = "y"
+J = "z"
+
+
+a = "k"
+b = "l"
+c = "m"
+d = "n"
+e = "o"
+f = "p"
+g = "q"
+h = "r"
+i = "s"
+j = "t"
+k = "u"
+l = "v"
+m = "w"
+n = "x"
+o = "y"
+p = "z"
+q = "a"
+r = "b"
+s = "c"
+t = "d"
+u = "e"
+v= "f"
+w = "g"
+x = "h"
+y = "i"
+z = "j"
